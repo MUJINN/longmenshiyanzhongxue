@@ -87,6 +87,7 @@ uvicorn app.main:app --reload
 
 
 ##📝 使用说明
+
 教师操作流程：
 -上传试卷 PDF/Word/图片等格式的作业文件。
 -系统自动调用 MinerU 解析试卷内容。
@@ -96,6 +97,7 @@ uvicorn app.main:app --reload
 
 
 ##🛠️ 开发建议
+
 -使用 pytest 编写单元测试，确保核心模块稳定性。
 -添加日志记录 (logging) 替代 print()，方便调试。
 -集成数据库支持（PostgreSQL/MySQL），用于保存历史批改记录。
@@ -103,6 +105,7 @@ uvicorn app.main:app --reload
 
 
 ##📦 未来扩展方向
+
 -引入 WebSocket 实现实时评分进度推送
 -支持多题批量评分接口
 -图像预览与标注工具
@@ -111,6 +114,7 @@ uvicorn app.main:app --reload
 
 
 ##🤝 贡献指南
+
 -欢迎贡献代码、改进功能或提交 issue。请遵循以下步骤：
 -Fork 本仓库
 -创建新分支（feature/xxx）
@@ -119,6 +123,7 @@ uvicorn app.main:app --reload
 
 
 ##💬 联系我们
+
 -如果你有任何建议、问题或合作意向，请联系作者邮箱或提交 issue。
 
 
