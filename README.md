@@ -29,27 +29,26 @@
 ---
 
 ## 📁 项目结构
-project-root/
-├── app/
-│   ├── main.py
-│   ├── config.py
-│   ├── utils.py
-│   ├── models/
-│   │   └── schemas.py
-│   ├── routers/
-│   │   ├── files.py
-│   │   └── submissions.py
-│   ├── services/
-│   │   ├── mineru_service.py
-│   │   └── grading_service.py
-│   └── core/
-│       └── ai/
-│           └── grading_model.py
-├── uploads/
-├── .env
-├── requirements.txt
-├── README.md
-
+- project-root/
+  - app/
+    - main.py
+    - config.py
+    - utils.py
+    - models/
+      - schemas.py
+    - routers/
+      - files.py
+      - submissions.py
+    - services/
+      - mineru_service.py
+      - grading_service.py
+  - core/
+    - ai/
+      - grading_model.py
+  - uploads/
+  - .env
+  - requirements.txt
+  - README.md
 
 ---
 
