@@ -1,5 +1,5 @@
 # 长门实验中学试题自动批改系统
-
+基于书生浦语大模型
 这是一个为教师设计的智能试题作业批改工具，旨在简化标准化题目的批改流程并提升效率。
 
 ---
@@ -23,7 +23,7 @@
 | 前端 | React / Vue.js（待开发） |
 | 数据库 | PostgreSQL / MySQL（待集成） |
 | 文件处理 | MinerU OCR 解析服务 |
-| AI 模型 | OpenRouter + 大语言模型（DeepSeek 等） |
+| AI 模型 | OpenRouter + 书生浦语大模型 |
 | 部署 | Docker + Kubernetes 或云平台部署 |
 
 ---
@@ -60,25 +60,30 @@ project-root/
 ```bash
 git clone https://github.com/yourname/grading-system.git
 cd grading-system
+```
 2. 安装依赖
-bash
+```bash
 pip install -r requirements.txt
+```
 3. 配置环境变量
 创建 .env 文件并添加如下内容：
-
+```bash
 env
 MINERU_AUTH_TOKEN=Bearer your_mineru_token_here
 OPENROUTER_API_KEY=your_openrouter_key_here
+```
 4. 启动服务
-bash
+```bash
 uvicorn app.main:app --reload
 访问：http://localhost:8000/docs 可查看并测试 API 文档。
+```
 
 🧪 主要接口说明
 接口	方法	描述
 /files/upload	POST	上传文件并触发 MinerU 解析任务
 /files/results/{batch_id}	GET	查询文件解析状态及结果地址
 /submissions/grade	POST	提交学生答案与标准答案进行自动评分
+
 📝 使用说明
 教师操作流程：
 上传试卷 PDF/Word/图片等格式的作业文件。
@@ -86,17 +91,20 @@ uvicorn app.main:app --reload
 教师输入参考答案与学生作答内容。
 系统返回 AI 自动生成的评分与评语。
 支持导出成绩报告（Excel/PDF 格式）。
+
 🛠️ 开发建议
 使用 pytest 编写单元测试，确保核心模块稳定性。
 添加日志记录 (logging) 替代 print()，方便调试。
 集成数据库支持（PostgreSQL/MySQL），用于保存历史批改记录。
 后续可引入前端页面，提供完整的 UI 操作体验。
+
 📦 未来扩展方向
 引入 WebSocket 实现实时评分进度推送
 支持多题批量评分接口
 图像预览与标注工具
 成绩报表导出为 Excel 或 PDF
 用户身份验证与权限管理模块
+
 🤝 贡献指南
 欢迎贡献代码、改进功能或提交 issue。请遵循以下步骤：
 
@@ -104,10 +112,12 @@ Fork 本仓库
 创建新分支（feature/xxx）
 提交 Pull Request 并描述改动
 保持代码规范和注释完整
+
+
 💬 联系我们
 如果你有任何建议、问题或合作意向，请联系作者邮箱或提交 issue。
 
 本项目受 MIT 许可证保护
 
-
+本README由书生浦语大模型生成
 
