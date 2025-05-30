@@ -85,8 +85,8 @@ uvicorn app.main:app --reload
 | files/results/ | {batch_id}	GET	  | 查询文件解析状态及结果地址 |
 | submissions/   | grade	POST | 提交学生答案与标准答案进行自动评分  |
 
-##📝 使用说明
 
+##📝 使用说明
 教师操作流程：
 -上传试卷 PDF/Word/图片等格式的作业文件。
 -系统自动调用 MinerU 解析试卷内容。
@@ -94,25 +94,24 @@ uvicorn app.main:app --reload
 -系统返回 AI 自动生成的评分与评语。
 -支持导出成绩报告（Excel/PDF 格式）。
 
-##🛠️ 开发建议
 
+##🛠️ 开发建议
 -使用 pytest 编写单元测试，确保核心模块稳定性。
 -添加日志记录 (logging) 替代 print()，方便调试。
 -集成数据库支持（PostgreSQL/MySQL），用于保存历史批改记录。
 -后续可引入前端页面，提供完整的 UI 操作体验。
 
-##📦 未来扩展方向
 
+##📦 未来扩展方向
 -引入 WebSocket 实现实时评分进度推送
 -支持多题批量评分接口
 -图像预览与标注工具
 -成绩报表导出为 Excel 或 PDF
 -用户身份验证与权限管理模块
 
+
 ##🤝 贡献指南
-
 -欢迎贡献代码、改进功能或提交 issue。请遵循以下步骤：
-
 -Fork 本仓库
 -创建新分支（feature/xxx）
 -提交 Pull Request 并描述改动
@@ -120,10 +119,11 @@ uvicorn app.main:app --reload
 
 
 ##💬 联系我们
-
 -如果你有任何建议、问题或合作意向，请联系作者邮箱或提交 issue。
 
+
 ##本项目受 MIT 许可证保护
+
 
 ##本README由书生浦语大模型生成
 
